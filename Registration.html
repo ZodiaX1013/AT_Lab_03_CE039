@@ -5,7 +5,7 @@ Registration Page
 </title>
 <link rel="stylesheet" href="mystyle.css">
 <body class="page-name">
-
+	<script src="myscript.js"></script>
 <div class="btn">
 
 <Button class="btn btn1"><a href="https://zodiax1013.github.io/AT_Lab_03_CE039/index.html" style="text-decoration: none;"> HOME </a></Button>
@@ -17,7 +17,7 @@ Registration Page
 </div>
 <div class="login">
 	<div class="user"></div>
-<form name="RegisterForm" method="post">
+<form name="RegisterForm" method="post" onsubmit="return validator()">
 <table align="center" border="1">
 
 <tr>
@@ -26,27 +26,27 @@ Registration Page
 
 <tr>
 <td>First Name:</td>
-<td><input type="text" name="name"></td>
+<td><input type="text" name="name" required=""></td>
 </tr>
 
 <tr>
 <td>Last Name:</td>
-<td><input type="text" name="name"></td>
+<td><input type="text" name="name" required=""></td>
 </tr>
 
 <tr>
 <td>Email Id:</td>
-<td><input type="id" name="mail"></td>
+<td><input type="id" name="mail" required=""></td>
 </tr>
 
 <tr>
 <td>Password:</td>
-<td><input type="pwd" name="Password"></td>
+<td><input type="pwd" name="Password" required=""></td>
 </tr>
 
 <tr>
 <td>Re enter password:</td>
-<td><input type="pwd" name="repassword"></td>
+<td><input type="pwd" name="repassword" required=""></td>
 </tr>
 
 <tr>
